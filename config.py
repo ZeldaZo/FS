@@ -36,12 +36,12 @@ DB_URI = os.environ.get("DATABASE_URL", "")
 PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
 
 # Username CH & Group
-CHANNEL = os.environ.get("CHANNEL", "viralkeseharian")
-GROUP = os.environ.get("GROUP", "media_tiktok")
+CHANNEL = os.environ.get("CHANNEL", "nakama_asl")
+GROUP = os.environ.get("GROUP", "fairysupport")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "-100"))
-FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "-100"))
+FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "0"))
+FORCE_SUB_2 = int(os.environ.get("FORCE_SUB_2", "0"))
 FORCE_SUB_3 = int(os.environ.get("FORCE_SUB_3", "0"))
 FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
 FORCE_SUB_5 = int(os.environ.get("FORCE_SUB_5", "0"))
@@ -71,7 +71,7 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 # Setel True jika Anda ingin Menonaktifkan tombol Bagikan Kiriman Saluran Anda
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
 
-ADMINS.extend((1668766845, 5081430435, 1707676937))
+ADMINS.extend(())
 
 
 LOG_FILE_NAME = "logs.txt"
