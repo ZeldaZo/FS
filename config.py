@@ -14,16 +14,16 @@ load_dotenv("config.env")
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 # API ID Anda dari my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "9774346"))
 
 # API Hash Anda dari my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "a92aed7d74654a563af4b07efbcd88e9")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "hanyapemilik")
+OWNER = os.environ.get("OWNER", "Eror_404_NF")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -33,11 +33,11 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 DB_URI = os.environ.get("DATABASE_URL", "")
 
 # Protect Content
-PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "False"))
+PROTECT_CONTENT = strtobool(os.environ.get("PROTECT_CONTENT", "True"))
 
 # Username CH & Group
-CHANNEL = os.environ.get("CHANNEL", "nakama_asl")
-GROUP = os.environ.get("GROUP", "fairysupport")
+CHANNEL = os.environ.get("CHANNEL", "Zoids_Robot")
+GROUP = os.environ.get("GROUP", "Zoidssupport")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
 FORCE_SUB_1 = int(os.environ.get("FORCE_SUB_1", "0"))
@@ -52,7 +52,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 # Pesan Awalan /start
 START_MSG = os.environ.get(
     "START_MESSAGE",
-    "<b>👩‍💻 𝑯𝒂𝒍𝒍𝒐 {first}</b>\n\n<b>✨ 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒅𝒂𝒑𝒂𝒕𝒌𝒂𝒏 𝑨𝒔𝒖𝒑𝒂𝒏 𝑮𝒓𝒂𝒕𝒊𝒔 𝑨𝒏𝒅𝒂 𝑯𝒂𝒓𝒖𝒔 𝑱𝒐𝒊𝒏 𝑻𝒆𝒓𝒍𝒆𝒃𝒊𝒉 𝑫𝒂𝒉𝒖𝒍𝒖\n✨ 𝑻𝒆𝒕𝒂𝒑 𝑺𝒕𝒂𝒚 𝑨𝒈𝒂𝒓 𝒃𝒊𝒔𝒂 𝑻𝒆𝒓𝒖𝒔 𝒅𝒂𝒑𝒂𝒕 𝑨𝒌𝒔𝒆𝒔 𝑽𝒊𝒅𝒆𝒐 𝑻𝒆𝒓𝒖𝒑𝒅𝒂𝒕𝒆\n\n👩‍💻 𝑱𝒊𝒌𝒂 𝑩𝒐𝒕 𝑴𝒂𝒕𝒊 𝒂𝒕𝒂𝒘 𝑩𝒆𝒓𝒌𝒆𝒏𝒅𝒂𝒍𝒂 𝑳𝒂𝒑𝒐𝒓 𝒌𝒆 @Teknisi69_bot.</b>",
+    "<b>👩‍💻 𝑯𝒂𝒍𝒍𝒐 {first}</b>\n\n<b>✨ 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒅𝒂𝒑𝒂𝒕𝒌𝒂𝒏 𝑨𝒔𝒖𝒑𝒂𝒏 𝑮𝒓𝒂𝒕𝒊𝒔 𝑨𝒏𝒅𝒂 𝑯𝒂𝒓𝒖𝒔 𝑱𝒐𝒊𝒏 𝑻𝒆𝒓𝒍𝒆𝒃𝒊𝒉 𝑫𝒂𝒉𝒖𝒍𝒖\n✨ 𝑻𝒆𝒕𝒂𝒑 𝑺𝒕𝒂𝒚 𝑨𝒈𝒂𝒓 𝒃𝒊𝒔𝒂 𝑻𝒆𝒓𝒖𝒔 𝒅𝒂𝒑𝒂𝒕 𝑨𝒌𝒔𝒆𝒔 𝑽𝒊𝒅𝒆𝒐 𝑻𝒆𝒓𝒖𝒑𝒅𝒂𝒕𝒆\n\n👩‍💻 𝑱𝒊𝒌𝒂 𝑩𝒐𝒕 𝑴𝒂𝒕𝒊 𝒂𝒕𝒂𝒘 𝑩𝒆𝒓𝒌𝒆𝒏𝒅𝒂𝒍𝒂 𝑳𝒂𝒑𝒐𝒓 𝒌𝒆 @Eror_404_NF.</b>",
 )
 try:
     ADMINS = [int(x) for x in (os.environ.get("ADMINS", "").split())]
@@ -62,7 +62,7 @@ except ValueError:
 # Pesan Saat Memaksa Subscribe
 FORCE_MSG = os.environ.get(
     "FORCE_SUB_MESSAGE",
-    "<b>👩‍💻 𝑯𝒂𝒍𝒍𝒐 {first}</b>\n\n<b>✨ 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒅𝒂𝒑𝒂𝒕𝒌𝒂𝒏 𝑨𝒔𝒖𝒑𝒂𝒏 𝑮𝒓𝒂𝒕𝒊𝒔 𝑨𝒏𝒅𝒂 𝑯𝒂𝒓𝒖𝒔 𝑱𝒐𝒊𝒏 𝑻𝒆𝒓𝒍𝒆𝒃𝒊𝒉 𝑫𝒂𝒉𝒖𝒍𝒖\n✨ 𝑻𝒆𝒕𝒂𝒑 𝑺𝒕𝒂𝒚 𝑨𝒈𝒂𝒓 𝒃𝒊𝒔𝒂 𝑻𝒆𝒓𝒖𝒔 𝒅𝒂𝒑𝒂𝒕 𝑨𝒌𝒔𝒆𝒔 𝑽𝒊𝒅𝒆𝒐 𝑻𝒆𝒓𝒖𝒑𝒅𝒂𝒕𝒆\n\n👩‍💻 𝑱𝒊𝒌𝒂 𝑩𝒐𝒕 𝑴𝒂𝒕𝒊 𝒂𝒕𝒂𝒘 𝑩𝒆𝒓𝒌𝒆𝒏𝒅𝒂𝒍𝒂 𝑳𝒂𝒑𝒐𝒓 𝒌𝒆 @Teknisi69_bot.</b>",
+    "<b>👩‍💻 𝑯𝒂𝒍𝒍𝒐 {first}</b>\n\n<b>✨ 𝑼𝒏𝒕𝒖𝒌 𝑴𝒆𝒏𝒅𝒂𝒑𝒂𝒕𝒌𝒂𝒏 𝑨𝒔𝒖𝒑𝒂𝒏 𝑮𝒓𝒂𝒕𝒊𝒔 𝑨𝒏𝒅𝒂 𝑯𝒂𝒓𝒖𝒔 𝑱𝒐𝒊𝒏 𝑻𝒆𝒓𝒍𝒆𝒃𝒊𝒉 𝑫𝒂𝒉𝒖𝒍𝒖\n✨ 𝑻𝒆𝒕𝒂𝒑 𝑺𝒕𝒂𝒚 𝑨𝒈𝒂𝒓 𝒃𝒊𝒔𝒂 𝑻𝒆𝒓𝒖𝒔 𝒅𝒂𝒑𝒂𝒕 𝑨𝒌𝒔𝒆𝒔 𝑽𝒊𝒅𝒆𝒐 𝑻𝒆𝒓𝒖𝒑𝒅𝒂𝒕𝒆\n\n👩‍💻 𝑱𝒊𝒌𝒂 𝑩𝒐𝒕 𝑴𝒂𝒕𝒊 𝒂𝒕𝒂𝒘 𝑩𝒆𝒓𝒌𝒆𝒏𝒅𝒂𝒍𝒂 𝑳𝒂𝒑𝒐𝒓 𝒌𝒆 @Eror_404_NF.</b>",
 )
 
 # Atur Teks Kustom Anda di sini, Simpan (None) untuk Menonaktifkan Teks Kustom
